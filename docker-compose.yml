@@ -1,0 +1,11 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sanjeevsingh.oneps.in
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "8080:3000"
