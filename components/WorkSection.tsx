@@ -49,6 +49,49 @@ export function WorkSection({ viewMode, onTabClick }: WorkSectionProps) {
                 Standardized reference architectures, modular Terraform definitions, and hybrid security guardrails delivered for real enterprise client challenges.
               </p>
             </motion.div>
+
+            {/* XERJ Corpus Hub Contributor Banner */}
+            <motion.div
+              variants={fadeUp}
+              className="mb-8 p-5 rounded-2xl border border-purple-500/30 bg-gradient-to-r from-purple-950/40 via-slate-900/60 to-purple-950/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-lg shadow-purple-950/20"
+            >
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3.5">
+                <a
+                  href="https://hub.xerj.org/contributors/sanjiivsingh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="shrink-0"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://hub.xerj.org/contributors/sanjiivsingh/badge.svg"
+                    alt="XERJ Corpus Hub Contributor"
+                    style={{ height: 26 }}
+                    className="hover:opacity-90 transition"
+                  />
+                </a>
+                <div>
+                  <h4 className="text-white font-semibold text-sm flex flex-wrap items-center gap-2">
+                    Official Contributor &mdash; XERJ Corpus Hub
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                      AI Agent Reference Memory
+                    </span>
+                  </h4>
+                  <p className="text-slate-400 text-xs mt-0.5">
+                    <code>terraform-azure-foundation</code> is officially indexed as a ground-truth worked example that autonomous AI coding agents retrieve when synthesizing Azure modular IaC.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://hub.xerj.org/contributors/sanjiivsingh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button button-outline text-xs whitespace-nowrap border-purple-500/40 text-purple-300 hover:bg-purple-900/30 flex items-center gap-1.5 shrink-0"
+              >
+                View Registry Record <ArrowUpRight size={14} />
+              </a>
+            </motion.div>
+
             <motion.div className="work-grid" variants={stagger}>
               {workProjects.map((p) => (
                 <motion.article className="work-card" key={p.id} variants={fadeUp}>

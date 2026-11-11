@@ -36,8 +36,23 @@ export function Hero({ onTabClick }: HeroProps) {
       variants={fadeUp}
     >
       <motion.div className="hero-copy" variants={stagger}>
-        <motion.div className="eyebrow" variants={fadeUp}>
+        <motion.div className="eyebrow flex flex-wrap items-center gap-2" variants={fadeUp}>
           <span className="status-dot" /> {personalInfo.availabilityStatus}
+          <span className="text-slate-600 hidden sm:inline">•</span>
+          <a
+            href="https://hub.xerj.org/contributors/sanjiivsingh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center hover:opacity-90 transition"
+            title="Official Contributor on XERJ Corpus Hub"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://hub.xerj.org/contributors/sanjiivsingh/badge.svg"
+              alt="XERJ Corpus Hub Contributor"
+              style={{ height: 18 }}
+            />
+          </a>
         </motion.div>
         <motion.h1 variants={fadeUp}>
           Enterprise Cloud, AI &amp; DevSecOps <span className="accent-azure">built to scale</span>,{" "}

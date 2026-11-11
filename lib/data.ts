@@ -39,7 +39,7 @@ export const personalInfo = {
   availability: "Available for Consulting & Contract Engagements",
   availabilityStatus: "Open for Consulting & Contracts",
   experienceYears: "10+ Years (5+ Azure Cloud & DevSecOps)",
-  bio: "Senior Azure Cloud Architect & DevSecOps Platform Engineer with 10+ years IT & institutional risk heritage (State Bank of India) and 5+ years dedicated to enterprise Microsoft Azure platforms. I engineer Zero-Trust Enterprise AI Landing Zones (Azure OpenAI, APIM AI Gateway, Vector RAG), CAF Hub-and-Spoke networks with Azure Firewall, modular Terraform IaC, production Kubernetes (AKS), and shift-left DevSecOps delivery pipelines with passwordless GitHub OIDC.",
+  bio: "Senior Azure Cloud Architect & DevSecOps Platform Engineer with 10+ years IT & institutional risk heritage (State Bank of India) and 5+ years dedicated to enterprise Microsoft Azure platforms. Official open-source contributor on the XERJ Corpus Hub (AI coding agent reference memory). I engineer Zero-Trust Enterprise AI Landing Zones (Azure OpenAI, APIM AI Gateway, Vector RAG), CAF Hub-and-Spoke networks with Azure Firewall, modular Terraform IaC, production Kubernetes (AKS), and shift-left DevSecOps delivery pipelines with passwordless GitHub OIDC.",
   location: "Gurugram, India / Remote Global",
 };
 
@@ -223,6 +223,19 @@ export const flagshipFocus = [
 
 export const workProjects: Project[] = [
   {
+    id: "project-azure-foundation-xerj",
+    type: "AI AGENT CORPUS · XERJ HUB",
+    title: "Terraform Azure Foundation (Featured on XERJ Hub)",
+    desc: "Modular Infrastructure as Code framework officially selected and indexed on the XERJ Corpus Hub as an open reference memory for autonomous AI coding agents synthesizing enterprise Azure infrastructure.",
+    components: ["Indexed on XERJ", "AI Agent Worked Example", "Virtual Network & Subnets", "Key Vault", "Storage Account", "Checkov & TFLint CI"],
+    objective: "Provides an authoritative ground-truth reference implementation cited by autonomous AI agents before writing cloud infrastructure code.",
+    links: [
+      { title: "XERJ Contributor Profile", url: "https://hub.xerj.org/contributors/sanjiivsingh", type: "live" },
+      { title: "GitHub Repo", url: "https://github.com/sanjiivsingh/terraform-azure-foundation", type: "github" },
+      { title: "XERJ Corpus Registry", url: "https://hub.xerj.org/corpus/sanjiivsingh--terraform-azure-foundation", type: "docs" }
+    ]
+  },
+  {
     id: "project-ai-landing-zone",
     type: "PRODUCTION AI INFRASTRUCTURE",
     title: "Enterprise Azure AI & GenAI Landing Zone",
@@ -283,6 +296,19 @@ export const workProjects: Project[] = [
     links: [
       { title: "GitHub Repo", url: "https://github.com/sanjiivsingh/azure-terraform-bootstrap-oidc", type: "github" },
       { title: "Architecture ADRs", url: "https://github.com/sanjiivsingh/azure-terraform-bootstrap-oidc/blob/main/docs/ARCHITECTURE.md", type: "docs" }
+    ]
+  },
+  {
+    id: "project-storage-private-link",
+    type: "ZERO-TRUST STORAGE · NETWORKING",
+    title: "Azure Storage Private Link & Private DNS",
+    desc: "Production-grade modular Terraform reference architecture establishing zero-public-access Azure Storage via dedicated Private Endpoints (Blob, File, Queue, Table), Private DNS zone groups, and NSG inspection.",
+    components: ["Private Link", "Dedicated PE per Subresource", "Private DNS Zones", "Zero Public Access", "Entra ID RBAC Only", "TFLint & Checkov CI"],
+    objective: "Eliminate public storage exposure and shared access keys with automated DNS CNAME delegation and data-plane RBAC.",
+    links: [
+      { title: "GitHub Repo", url: "https://github.com/sanjiivsingh/azure-storage-private-link-terraform", type: "github" },
+      { title: "Architecture ADRs", url: "https://github.com/sanjiivsingh/azure-storage-private-link-terraform/blob/main/docs/ADR/0001-per-subresource-private-endpoints.md", type: "docs" },
+      { title: "Verification Evidence", url: "https://github.com/sanjiivsingh/azure-storage-private-link-terraform/blob/main/docs/EVIDENCE.md", type: "docs" }
     ]
   },
   {

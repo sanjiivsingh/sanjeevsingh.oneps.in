@@ -79,6 +79,34 @@ export function AboutSection() {
               <span>Modular IaC, AKS Security &amp; DevSecOps</span>
             </div>
           </motion.div>
+
+          <motion.div
+            variants={fadeUp}
+            className="mt-6 p-4 rounded-xl border border-purple-500/30 bg-purple-950/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+          >
+            <div className="flex items-center gap-3">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://hub.xerj.org/contributors/sanjiivsingh/badge.svg"
+                alt="XERJ Corpus Hub Contributor"
+                style={{ height: 22 }}
+              />
+              <div>
+                <div className="text-sm font-semibold text-white">Official XERJ Corpus Hub Contributor</div>
+                <div className="text-xs text-slate-400">
+                  <code>terraform-azure-foundation</code> selected as reference memory for autonomous AI coding agents
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://hub.xerj.org/contributors/sanjiivsingh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1 underline underline-offset-4 whitespace-nowrap"
+            >
+              View Contributor Record &rarr;
+            </a>
+          </motion.div>
         </Reveal>
       </section>
 
